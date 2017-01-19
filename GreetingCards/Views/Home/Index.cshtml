@@ -1,0 +1,108 @@
+﻿@using GreetingCards.Extensions
+@{
+    ViewBag.Title = "Samantha Care Cards";
+}
+<br />
+<div class="jumbotron ">
+    <h3 class="text-warning">(This site is still under construction. I am trying to get this site up running ASAP. Please leave me a comment. )</h3>
+    <h1>Care Cards </h1> 
+    <p class="lead">Care Cards is a free website where you can send cards to people you care about, for free.</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>1: @Html.ActionLink("Select Card", "Index", "OrderCard")</h2>
+        <p>
+            Select a card.  All card are designed by Samantha Chu.
+        </p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>2: Enter the Recipient</h2>
+        <p>Enter the information of the person who you want the card to be sent to.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>3: Send</h2>
+        <p>That's it. I will send the card for you for free. You can donate and help me keep this site going if you can.
+    </div>
+</div>
+<br />
+<br />
+
+
+<div class="container frontCardDiv">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href='@Url.Action("Index","OrderCard")'>
+                        <img src="~/Images/Cards/card003.PNG" class="img-responsive img-rounded" />
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href='@Url.Action("Index","OrderCard")'>
+                        <img src="~/Images/Cards/happymothersday.jpg" class="img-responsive img-rounded" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <a href='@Url.Action("Index","OrderCard")'>
+                <img src="~/Images/Cards/card006.png" class="img-responsive img-rounded verticalImage" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href='@Url.Action("Index","OrderCard")'>
+                        <img src="~/Images/Cards/drinktime.jpg" class="img-responsive img-rounded" />
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href='@Url.Action("Index","OrderCard")'>
+                        <img src="~/Images/Cards/thanks.jpg" class="img-responsive img-rounded" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <a href='@Url.Action("Index","OrderCard")'>
+                <img src="~/Images/Cards/congrats.jpg" class="img-responsive img-rounded" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href='@Url.Action("Index","OrderCard")'>
+                <img src="~/Images/Cards/pizza.jpg" class="img-responsive img-rounded" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href='@Url.Action("Index","OrderCard")'>
+                <img src="~/Images/Cards/city.jpg" class="img-responsive img-rounded" />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <a href='@Url.Action("Index","OrderCard")'>
+                <img src="~/Images/Cards/happyvalentinesday.jpg" class="img-responsive img-rounded" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href='@Url.Action("Index","OrderCard")'>
+                <img src="~/Images/Cards/icecream.jpg" class="img-responsive img-rounded" />
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href='@Url.Action("Index","OrderCard")'>
+                <img src="~/Images/Cards/donuts.jpg" class="img-responsive img-rounded" />
+            </a>
+        </div>
+    </div>
+</div>

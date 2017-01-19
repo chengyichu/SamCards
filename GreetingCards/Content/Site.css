@@ -1,0 +1,60 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('/Images/DonutBackground1.png');
+    background-size: 100%;
+}
+
+.homeTopDiv {
+
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.thumbImg {
+    width: 200px;
+}
+
+.my-container {
+    position: relative;
+    overflow: hidden;
+}
+.my-container h1 {
+    padding: 200px;
+    position: relative;
+    z-index: 2;
+} 
+
+.frontCardDiv div {
+    /*border-color: black;
+    border: 2px solid lightslategray;*/
+    padding: 3px;
+}
+.frontCardDiv img {
+    height: 262px;
+    border-color: black;
+    border: 2px solid lightslategray;
+}
+
+.frontCardDiv .verticalImage {
+    height: 525px;
+}

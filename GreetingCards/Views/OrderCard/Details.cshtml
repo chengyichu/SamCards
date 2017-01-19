@@ -1,0 +1,56 @@
+﻿@model GreetingCards.Models.CardInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CardInfo</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-7"> <img src="~/Images/Cards/@Model.ImageFront" class="img-responsive img-rounded" /></div>
+        <div class="col-md-5">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ImageFront)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ImageFront)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ImageBack)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ImageBack)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CardCategory.Description)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CardCategory.Description)
+                </dd>
+
+            </dl>
+            
+        </div>
+    </div>
+</div>
+<p>
+   @* @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

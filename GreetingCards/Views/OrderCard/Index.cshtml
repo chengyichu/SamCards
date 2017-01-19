@@ -1,0 +1,49 @@
+﻿@using GreetingCards.Extensions
+@model IEnumerable<GreetingCards.Models.CardInfo>
+
+@{
+    ViewBag.Title = "Order Card";
+}
+
+<h2>Select a Card</h2>
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Card 
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+
+        <th>
+            Category
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionImage("Details", new { id = item.Id }, "~/Images/Cards/" + item.ImageFront, "Edit", "img-responsive thumbImg")
+   
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.CardCategory.Description)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |*@
+            @Html.ActionLink("Select", "Details", new { id = item.Id }) 
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+        </td>
+    </tr>
+}
+
+</table>

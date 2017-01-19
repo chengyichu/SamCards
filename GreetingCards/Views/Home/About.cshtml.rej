@@ -1,0 +1,10 @@
+diff a/GreetingCards/Views/Home/About.cshtml b/GreetingCards/Views/Home/About.cshtml	(rejected hunks)
+@@ -7,7 +7,7 @@
+         Last summer, I had the chance to participate in a Red Cross program where I volunteered at a retirement
+         home and met senior citizens in Taiwan. After one particular lady learned that I was interested in, and
+         loved art, she asked me to keep in touch with her by sending her handmade greeting cards. Seeing her
+-        face light up after promising her to send her my art made me realize how much joy I could bring to one
++        face light up after promising her to send her my art made me realize how much joy could be brought to one
+         person with something as simple as a hand-drawn card.
+     </p>
+     
