@@ -58,3 +58,7 @@ textarea {
 .frontCardDiv .verticalImage {
     height: 525px;
 }
+
+.updateMessage {
+    color: orangered;
+}
